@@ -1,0 +1,13 @@
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\DAL.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\DAL.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\BE.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\DS.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\Json.NET.Web.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\Newtonsoft.Json.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\BE.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\DS.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Release\Newtonsoft.Json.xml
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Release\DAL.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Release\DAL.pdb

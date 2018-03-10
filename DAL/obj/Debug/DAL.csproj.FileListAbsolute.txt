@@ -1,0 +1,86 @@
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.pdb
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.pdb
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.pdb
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\BE.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\bin\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DAL\obj\Debug\DAL.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\bin\Debug\DAL.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\bin\Debug\DAL.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\obj\Debug\DAL.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DAL\obj\Debug\DAL.pdb
+C:\Users\וייס\Desktop\second\DAL\bin\Debug\DAL.dll
+C:\Users\וייס\Desktop\second\DAL\bin\Debug\DAL.pdb
+C:\Users\וייס\Desktop\second\DAL\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\second\DAL\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\second\DAL\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\second\DAL\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\second\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\second\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\second\DAL\obj\Debug\DAL.dll
+C:\Users\וייס\Desktop\second\DAL\obj\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Debug\DAL.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\obj\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\DAL.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\DAL.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\BE.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\BE.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\Json.NET.Web.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mendi bursh\Downloads\second\second\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\DAL.dll
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\DAL.pdb
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\Json.NET.Web.dll
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\theFinalProject\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\וייס\Desktop\theFinalProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\theFinalProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\theFinalProject\DAL\obj\Debug\DAL.dll
+C:\Users\וייס\Desktop\theFinalProject\DAL\obj\Debug\DAL.pdb
