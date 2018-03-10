@@ -1,0 +1,8 @@
+C:\Users\mendi bursh\Downloads\second\second\BE\bin\Release\BE.dll
+C:\Users\mendi bursh\Downloads\second\second\BE\bin\Release\BE.pdb
+C:\Users\mendi bursh\Downloads\second\second\BE\bin\Release\Json.NET.Web.dll
+C:\Users\mendi bursh\Downloads\second\second\BE\bin\Release\Newtonsoft.Json.dll
+C:\Users\mendi bursh\Downloads\second\second\BE\bin\Release\Newtonsoft.Json.xml
+C:\Users\mendi bursh\Downloads\second\second\BE\obj\Release\BE.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\second\second\BE\obj\Release\BE.dll
+C:\Users\mendi bursh\Downloads\second\second\BE\obj\Release\BE.pdb
