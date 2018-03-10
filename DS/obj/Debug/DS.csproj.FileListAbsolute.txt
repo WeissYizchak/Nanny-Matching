@@ -1,0 +1,70 @@
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.pdb
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.pdb
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.dll
+C:\Users\וייס\source\repos\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (2)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.dll
+C:\Users\וייס\Desktop\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\bin\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\bin\Debug\BE.pdb
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\dotNet5778_Project02_6655_7776 (3)\dotNet5778_Project02_6655_7776\DS\obj\Debug\DS.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\obj\Debug\DS.dll
+C:\Users\וייס\Desktop\‏‏dotNet5778_Project02_6655_7776 - עותק\DS\obj\Debug\DS.pdb
+C:\Users\וייס\Desktop\second\DS\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\second\DS\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\second\DS\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\second\DS\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\second\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\second\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\second\DS\obj\Debug\DS.dll
+C:\Users\וייס\Desktop\second\DS\obj\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\BE.dll
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\BE.pdb
+C:\Users\mendi bursh\Downloads\second\second\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\mendi bursh\Downloads\second\second\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\mendi bursh\Downloads\second\second\DS\obj\Debug\DS.dll
+C:\Users\mendi bursh\Downloads\second\second\DS\obj\Debug\DS.pdb
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\Json.NET.Web.dll
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mendi bursh\Downloads\second\second\DS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\DS.dll
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\DS.pdb
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\BE.dll
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\Json.NET.Web.dll
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\BE.pdb
+C:\Users\וייס\Desktop\theFinalProject\DS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\וייס\Desktop\theFinalProject\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\וייס\Desktop\theFinalProject\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\Users\וייס\Desktop\theFinalProject\DS\obj\Debug\DS.dll
+C:\Users\וייס\Desktop\theFinalProject\DS\obj\Debug\DS.pdb
