@@ -1,0 +1,42 @@
+﻿<Window x:Class="PLWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="MainWindow">
+    <Window.Resources>
+
+        <local:NotBooleanToVisibilityConverter     
+            x:Key="notBooleanToVisibilityConverter" />
+
+    </Window.Resources>
+    <Grid>
+        <Grid ShowGridLines="False"  Background="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="NannyButton" Content="Nannis" FontSize="30" Grid.Row="0" Grid.Column="0" Click="Button_Click" /> 
+            <Button x:Name="MotherButton" Content="Mothers" FontSize="30" Grid.Row="1" Grid.Column="0" Click="Button_Click" />
+            <Button x:Name="ChildButton" Content="Children" FontSize="30" Grid.Row="2" Grid.Column="0" Click="Button_Click"/>
+            <Button x:Name="ContractButton" Content="Contracts" FontSize="30" Grid.Row="3" Grid.Column="0" Click="Button_Click"/>
+            <Frame x:Name="selectPage" x:FieldModifier="public" Grid.Column="1" Grid.Row="0" Grid.RowSpan="4" NavigationUIVisibility="Hidden"/>
+            <Grid x:Name="butoomGrid" Visibility="Collapsed" Grid.Column="1" Grid.Row="5" Background="LightPink">
+                <Button x:Name="getAllList" FontSize="10" Grid.Column="1" Grid.Row="4" Width="100" Height="40" Margin="366.4,29.2,41.6,31.6" Click="getAllList_Click"/>
+                <Button x:Name="getOneFromList" FontSize="10" Grid.Column="1" Grid.Row="4" Width="100" Height="40" Margin="226.4,29.2,181.6,31.6" Click="getOneFromList_Click" />
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</Window>

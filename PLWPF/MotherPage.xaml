@@ -1,0 +1,165 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PLWPF"
+      xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.MotherPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="400.4" d:DesignWidth="595"
+    Validation.Error="Page_Error"
+      Title="MotherPage">
+    <Page.Resources>
+
+        <Style x:Key="textStyleTextBox" TargetType="TextBox">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MyButton" TargetType="Button">
+            <Setter Property="TextBlock.Foreground" Value="Black" />
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+
+        <Style x:Key="UP" TargetType="Button">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=nameDey, Path=Content}" Value="Sunday">
+                    <Setter Property="Button.IsEnabled" Value="false"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+      
+        <Style x:Key="DOWN" TargetType="Button">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=nameDey, Path=Content}" Value="Friday">
+                    <Setter Property="Button.IsEnabled" Value="false"/>
+                </DataTrigger>
+
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MyStyleTextBox" TargetType="TextBox" BasedOn="{StaticResource textStyleTextBox }">
+            <Setter Property="TextBox.IsEnabled" Value="True"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=DeleteMother, Path=IsChecked}" Value="true">
+                    <Setter Property="TextBox.IsEnabled" Value="false"/>
+                </DataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ElementName=UpdateMother, Path=IsChecked}" Value="true" />
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=Name}" Value="idTextBox"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="TextBox.IsEnabled" Value="False" />
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+
+        <local:NotBooleanToVisibilityConverter     
+            x:Key="notBooleanToVisibilityConverter" />
+    </Page.Resources>
+
+    <Grid Background="LightGray" Margin="0,0,-119.8,-50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="57*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name ="gridMomData" VerticalAlignment="Top" Margin="55,37,0,0" HorizontalAlignment="Left"  >
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3"  HorizontalAlignment="Left" Grid.Column="0" Content="Id:" />
+            <TextBox  x:Name="idTextBox"  Width="120" VerticalAlignment="Center" Text="{Binding Path=Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}"/>
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="First Name:"/>
+            <TextBox x:Name="firstNameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding FirstName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="1" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}"/>
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Last Name:"/>
+            <TextBox x:Name="lastNameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding LastName, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=true }"  Grid.Row="2" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}"/>
+            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Address:"/>
+            <TextBox x:Name="addressTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Address, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="3" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}" TextChanged="addressTextBox_TextChanged" LostFocus="addressTextBox_LostFocus"/>
+            <Label VerticalAlignment="Center" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="cell Phone:"/>
+            <TextBox x:Name="cellPhoneTextBox" Width="120" VerticalAlignment="Center" Text="{Binding cellPhone, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="4" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}"/>
+            <Label VerticalAlignment="Center" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Area to Search"/>
+            <TextBox x:Name="areaToSearchTextBox" Width="120" VerticalAlignment="Center" Text="{Binding AreaCerch, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="5" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}"/>
+            <Label VerticalAlignment="Center" Grid.Row="6" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="notice:"/>
+            <TextBox x:Name="remarksTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Remarks, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="6" Margin="3.2,4,0,-86" Height="114" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource MyStyleTextBox}"/>
+        </Grid>
+
+        <DataGrid x:Name="dataGrid" ItemsSource= "{Binding}"  IsReadOnly="True" HorizontalAlignment="Left" Height="85" Margin="79.2,37,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="DataGrid_SelectionChanged" Grid.Column="1" AutoGenerateColumns="False" IsTextSearchEnabled="True" IsTextSearchCaseSensitive="False" >
+            <DataGrid.Visibility>
+                <Binding ElementName="AddMother" Path="IsChecked" Converter="{StaticResource notBooleanToVisibilityConverter}" ConverterParameter="dataGrid" />
+            </DataGrid.Visibility>
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="60" Binding="{Binding Path = Id }"></DataGridTextColumn>
+                <DataGridTextColumn Header="First name" Width="70" Binding="{Binding Path= FirstName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Last name" Width="100*" Binding="{Binding Path=LastName}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="SaveButton" Content="Save" Style="{StaticResource MyButton}"  HorizontalAlignment="Left" Margin="95,380,0,0" VerticalAlignment="Top" Width="154" Height="36" Click="SaveButton_Click">
+            <Button.Visibility>
+            <Binding ElementName="AddMother" Path="IsChecked" Converter="{StaticResource notBooleanToVisibilityConverter}"/>
+            </Button.Visibility>
+        </Button>
+        <Button x:Name="UpdateButton" Content="Update" Style="{StaticResource MyButton}" HorizontalAlignment="Left" Margin="95,380,0,0" VerticalAlignment="Top" Width="154" Height="36" Click="UpdateButton_Click" Visibility="{Binding ElementName=UpdateMother, Path=IsChecked, Converter={StaticResource notBooleanToVisibilityConverter}}"/>
+        <Button x:Name="DeleteButton" Content="Delete" Style="{StaticResource MyButton}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Height="36" Margin="95,380,0,0" Click="DeleteButton_Click" Visibility="{Binding ElementName=DeleteMother, Path=IsChecked, Converter={StaticResource notBooleanToVisibilityConverter}}"/>
+        <RadioButton x:Name="AddMother" Content="Add Mother" HorizontalAlignment="Left" Margin="155.2,144,0,0" VerticalAlignment="Top"  Grid.Column="1" IsChecked="True" Checked="Mother_Checked"/>
+        <RadioButton x:Name="UpdateMother" Content="Update Mother" HorizontalAlignment="Left" Margin="155.2,173,0,0" VerticalAlignment="Top"  Grid.Column="1" Checked="Mother_Checked"/>
+        <RadioButton x:Name="DeleteMother" Content="Delete Mother" HorizontalAlignment="Left" Margin="155.2,200,0,0" VerticalAlignment="Top"  Grid.Column="1" Checked="Mother_Checked"/>
+        <Grid HorizontalAlignment="Left" Height="145" Margin="260,97,0,0" VerticalAlignment="Top" Width="195" Grid.ColumnSpan="2">
+
+            <Grid x:Name="timeGrid" HorizontalAlignment="Left" Margin="14,34,0,0" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Start:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="1" VerticalAlignment="Center"/>
+                <TextBox x:Name="StartTimeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="1" Text="{Binding Path=StartTime, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="63" IsEnabled="{Binding ElementName=isWorkDayCheckBox, Path=IsChecked}" GotFocus="StartTimeTextBox_GotFocus"/>
+
+                <Label Content="End:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="EndTimeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="2" Text="{Binding Path=EndTime, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="63" IsEnabled="{Binding ElementName=isWorkDayCheckBox, Path=IsChecked}" GotFocus="EndTimeTextBox_GotFocus"/>
+
+                <Label Content="You Work?:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,4,0,3.6" Grid.Row="0" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="83"/>
+                <CheckBox x:Name="isWorkDayCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding IsWork, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="35.8,8,0,9.6" Grid.Row="0" VerticalAlignment="Center" RenderTransformOrigin="2.84,0.1" />
+
+                <Button Content="DOWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="30"  RenderTransformOrigin="0.5,0.73" Grid.Column="2" Margin="10.2,30.4,-52.2,0" Grid.Row="1" Grid.RowSpan="2" Click="Button_Click_1" Style="{StaticResource DOWN}"/>
+                <Button Content="UP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="30" RenderTransformOrigin="5.187,1.413" Grid.Column="2" Margin="10.2,4,-52.2,0" Grid.RowSpan="2" Click="Button_Click" Style="{StaticResource UP}"/>
+
+            </Grid>
+            <Label Content="Please enter your working hours" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="175"/>
+            <Label x:Name="nameDey" Content="Sunday" HorizontalAlignment="Left" Margin="130,70,0,0" VerticalAlignment="Top" Width="55"/>
+        </Grid>
+
+        <Border Name="addresBordr" BorderBrush="Black"  Visibility="Collapsed" BorderThickness="1" Margin="155,162,35.8,138">
+            <ScrollViewer Background="White" VerticalScrollBarVisibility="Auto" Margin="0.2,-0.8,-0.8,-2" RenderTransformOrigin="0.5,0.5">
+                <StackPanel Name="resultStack"></StackPanel>
+            </ScrollViewer>
+        </Border>
+
+    </Grid>
+
+</Page>                   

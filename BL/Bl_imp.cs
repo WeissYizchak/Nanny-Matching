@@ -14,7 +14,7 @@ namespace BL
 {
     public class Bl_imp : IBL
     {
-        DAL.IDAL dl;
+        IDAL dl;
 
 
         public Bl_imp()

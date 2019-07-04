@@ -11,7 +11,7 @@ namespace DAL
 {
     sealed class Dal_imp : IDAL
     {
-
+        //singelton Dsgine
         static readonly IDAL instance = new Dal_imp();
         // static int Range = 1000;
         public static IDAL Instance { get { return instance; } }
@@ -19,6 +19,7 @@ namespace DAL
         Dal_imp() { }
         static Dal_imp() { }
 
+        //------------menage nanny--------------// 
 
         /// <summary>
         /// adds a Nanny object to the list
@@ -57,6 +58,32 @@ namespace DAL
             DataSource.NannyList.Add(nan.Clone());
         }
 
+        /// <summary>
+        /// Gets the clone of all nannies
+        /// </summary>
+        /// <returns>List collection of all nannies</returns>
+        public List<Nanny> getNannis()
+        {
+            if (DataSource.NannyList == null) throw new DALException("The list of nannis are empty");
+            var temp = DataSource.NannyList.Select(item => item.Clone()).ToList();
+            return temp;
+        }
+
+        /// <summary>
+        /// get one Nanny from the collction, order to the naani's id
+        /// </summary>
+        /// <param name="idNumber">nanni's id</param>
+        /// <returns>Nanny object</returns>
+        public Nanny GetNanny(int idNumber)
+        {
+            if (DataSource.NannyList.All(x => x.Id != idNumber)) throw new DALException("There is no nanny with this id");
+            var nanny = from item in DataSource.NannyList
+                        where item.Id == idNumber
+                        select item.Clone();
+            return nanny.ToList()[0];
+        }
+
+        //---------------menage mother----------------//
 
         /// <summary>
         /// adds a Mother object to the list
@@ -97,6 +124,32 @@ namespace DAL
             DataSource.MotherList.Add(mam.Clone());
         }
 
+        /// <summary>
+        /// Gets clone of all Mothers
+        /// </summary>
+        /// <returns>List collection of all mothers</returns>
+        public List<Mother> getMothers()
+        {
+            if (DataSource.MotherList == null) throw new DALException("The list of mothers are empty");
+            var temp = DataSource.MotherList.Select(item => item.Clone()).ToList();
+            return temp;
+        }
+
+        /// <summary>
+        /// get one Mother from the collction, order to the mother's id
+        /// </summary>
+        /// <param name="idNumber"></param>
+        /// <returns></returns>
+        public Mother GetMother(int idNumber)
+        {
+            if (DataSource.MotherList.All(x => x.Id != idNumber)) throw new DALException("There is no mother with this id");
+            var mother = from item in DataSource.MotherList
+                         where item.Id == idNumber
+                         select item.Clone();
+            return mother.ToList()[0];
+        }
+
+        //--------------menage children--------------//
 
         /// <summary>
         /// adds a Child object to the list
@@ -137,6 +190,46 @@ namespace DAL
                                        select item).ToList();
             DataSource.ChildrenList.Add(child.Clone());
         }
+
+        /// <summary>
+        /// Gets clone of all Children
+        /// </summary>
+        /// <returns>List collection of all Children</returns>
+        public List<Child> getChildren()
+        {
+            if (DataSource.ChildrenList == null) throw new DALException("The list of children are empty");
+            var temp = DataSource.ChildrenList.Select(item => item.Clone()).ToList();
+            return temp;
+        }
+
+        /// <summary>
+        /// get one Child from the collection order to the child's id
+        /// </summary>
+        /// <param name="idNumber">child's id</param>
+        /// <returns>Child object</returns>
+        public Child GetChild(int idNumber)
+        {
+            if (DataSource.ChildrenList.All(x => x.Id != idNumber)) throw new DALException("There is no Child with this id");
+            var child = from item in DataSource.ChildrenList
+                        where item.Id == idNumber
+                        select item.Clone();
+            return child.ToList()[0];
+        }
+
+        public bool GetChildExsist(int idNumber)
+        {
+            if (DataSource.ChildrenList.All(x => x.Id != idNumber))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+
+        //---------------menage Contracts----------------//
 
         /// <summary>
         /// adds to the contract a range number
@@ -185,102 +278,14 @@ namespace DAL
         }
 
         /// <summary>
-        /// return the clone list of nannies
+        /// gets clone of all contractes
         /// </summary>
-        /// <returns></returns>
-        public List<Nanny> getNannis()
-        {
-            if (DataSource.NannyList == null) throw new DALException("The list of nannis are empty");
-            var temp = DataSource.NannyList.Select(item => item.Clone()).ToList();
-            return temp;
-        }
-
-        /// <summary>
-        /// return clone list of Motheres
-        /// </summary>
-        /// <returns></returns>
-        public List<Mother> getMothers()
-        {
-            if (DataSource.MotherList == null) throw new DALException("The list of mothers are empty");
-            var temp = DataSource.MotherList.Select(item => item.Clone()).ToList();
-            return temp;
-        }
-
-        /// <summary>
-        /// return clone list of Children
-        /// </summary>
-        /// <returns></returns>
-        public List<Child> getChildren()
-        {
-            if (DataSource.ChildrenList == null) throw new DALException("The list of children are empty");
-            var temp = DataSource.ChildrenList.Select(item => item.Clone()).ToList();
-            return temp;
-        }
-
-        /// <summary>
-        /// return clone list of contractes
-        /// </summary>
-        /// <returns></returns>
+        /// <returns>List collection of all contracts</returns>
         public List<Contract> getContracts()
         {
             if (DataSource.ContractList == null) throw new DALException("The list of contracts are empty");
             var temp = DataSource.ContractList.Select(item => item.Clone()).ToList();
             return temp;
-        }
-
-        /// <summary>
-        /// get one Child from the collection order to the child's id
-        /// </summary>
-        /// <param name="idNumber">child's id</param>
-        /// <returns>Child object</returns>
-        public Child GetChild(int idNumber)
-        {
-            if (DataSource.ChildrenList.All(x => x.Id != idNumber)) throw new DALException("There is no Child with this id");
-            var child = from item in DataSource.ChildrenList
-                        where item.Id == idNumber
-                        select item.Clone();
-            return child.ToList()[0];
-        }
-
-		public bool GetChildExsist(int idNumber)
-		{
-			if (DataSource.ChildrenList.All(x => x.Id != idNumber))
-			{
-				return false;
-			}
-			else
-			{
-				return true;
-			}
-
-		}
-
-        /// <summary>
-        /// get one Nanny from the collction, order to the naani's id
-        /// </summary>
-        /// <param name="idNumber">nanni's id</param>
-        /// <returns>Nanny object</returns>
-        public Nanny GetNanny(int idNumber)
-        {
-            if (DataSource.NannyList.All(x => x.Id != idNumber)) throw new DALException("There is no nanny with this id");
-            var nanny = from item in DataSource.NannyList
-                        where item.Id == idNumber
-                        select item.Clone();
-            return nanny.ToList()[0];
-        }
-
-        /// <summary>
-        /// get one Mother from the collction, order to the mother's id
-        /// </summary>
-        /// <param name="idNumber"></param>
-        /// <returns></returns>
-        public Mother GetMother(int idNumber)
-        {
-            if (DataSource.MotherList.All(x => x.Id != idNumber)) throw new DALException("There is no mother with this id");
-            var mother = from item in DataSource.MotherList
-                         where item.Id == idNumber
-                         select item.Clone();
-            return mother.ToList()[0];
         }
 
         /// <summary>

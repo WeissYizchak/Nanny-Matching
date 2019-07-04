@@ -1,0 +1,197 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PLWPF"
+      xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.ContractPage"
+      mc:Ignorable="d"
+      Title="ContractPage" Language="he-IL">
+
+    <Page.Resources>
+
+
+        <Style x:Key="MyButton" TargetType="Button">
+            <Setter Property="TextBlock.Foreground" Value="Black" />
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+
+        <Style x:Key="DataGridStyle" TargetType="DataGrid">
+            <Setter Property="Visibility" Value="Visible"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=AddContract, Path=IsChecked}" Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="IshourlyRate" TargetType="TextBox">
+            <Style.Triggers>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ElementName=isHourlyRateCheckBox, Path=IsChecked}" Value="true" />
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=Name}" Value="rateOfMonthTextBox"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ElementName=isHourlyRateCheckBox, Path=IsChecked}" Value="false" />
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=Name}" Value="rateOfHourTextBox"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Key="IshourlyRate1" TargetType="Label">
+            <Style.Triggers>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ElementName=isHourlyRateCheckBox, Path=IsChecked}" Value="true" />
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=Name}" Value="RateOfMonthLabel"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ElementName=isHourlyRateCheckBox, Path=IsChecked}" Value="false" />
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=Name}" Value="rateofhourLabel"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <local:NotBooleanToVisibilityConverter     
+            x:Key="notBooleanToVisibilityConverter" />
+
+
+    </Page.Resources>
+
+
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="470*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="contractGrid" VerticalAlignment="Top" HorizontalAlignment="Left"  Width="240" Height="384" Margin="23,8,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Contract Number:"/>
+            <TextBox x:Name="contractNumberTextBox" IsEnabled="False" Width="120" VerticalAlignment="Center" Text="{Binding ContractNumber, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Child Id:"/>
+            <TextBox x:Name="childIdTextBox" KeyUp="TextBox_KeyUp" Width="120" VerticalAlignment="Center" Text="{Binding ChildId, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="1" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" TextChanged="childIdTextBox_TextChanged"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Mother Id:"/>
+            <TextBox x:Name="motherIdTextBox" KeyUp="TextBox_KeyUp" Width="120" VerticalAlignment="Center" Text="{Binding MotherId, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="2" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Nanny Id:"/>
+            <TextBox x:Name="nannyIdTextBox" KeyUp="TextBox_KeyUp" Width="120" VerticalAlignment="Bottom" Text="{Binding NannyId, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="3" Margin="4.2,0,0,3" Height="24" HorizontalAlignment="Left" Grid.Column="1" TextChanged="nannyIdTextBox_TextChanged" />
+
+            <Label VerticalAlignment="Center"  Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="stert Employment:"/>
+            <DatePicker x:Name="stertEmploymentDatePicker" VerticalAlignment="Center" SelectedDate="{Binding stertEmployment, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="end Employment:"/>
+            <DatePicker x:Name="endEmploymentDatePicker" VerticalAlignment="Center" SelectedDate="{Binding endEmployment, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="6" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Is Hourly Rate:"/>
+            <CheckBox x:Name="isHourlyRateCheckBox" VerticalAlignment="Center" Grid.Row="6" Margin="3" IsChecked="{Binding IsHourlyRate, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" HorizontalAlignment="Left" Grid.Column="1" Content=""  />
+            <Label VerticalAlignment="Center" Name="rateofhourLabel" Grid.Row="7" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Rate Of Hour:" Style="{StaticResource IshourlyRate1}"/>
+            <TextBox x:Name="rateOfHourTextBox" LostFocus="rateOfHourTextBox_LostFocus" Width="120" VerticalAlignment="Center" Text="{Binding RateOfHour , Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                     Grid.Row="7" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource IshourlyRate}"/>
+            <Label VerticalAlignment="Center" Name="RateOfMonthLabel" Grid.Row="8" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Rate Of Month:" Style="{StaticResource IshourlyRate1}"/>
+            <TextBox x:Name="rateOfMonthTextBox" LostFocus="rateOfMonthTextBox_LostFocus"  Width="120" VerticalAlignment="Center" Text="{Binding RateOfMonth , Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" Grid.Row="8" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource IshourlyRate}"/>
+            <Label VerticalAlignment="Center" Grid.Row="9" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Salary:"/>
+            <TextBox x:Name="salaryTextBox" Width="120" VerticalAlignment="Center" IsEnabled="False" Text="{Binding Salary,StringFormat= {}{0:C0}, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                     Grid.Row="9" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="10" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Is Acquaintance:"/>
+            <CheckBox x:Name="isAcquaintanceCheckBox" VerticalAlignment="Center" Grid.Row="10" Margin="3" IsChecked="{Binding IsAcquaintance, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" HorizontalAlignment="Left" Grid.Column="1" Content=""/>
+
+            <Label VerticalAlignment="Center" Grid.Row="11" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Signed Contract:"/>
+            <CheckBox x:Name="isContractCheckBox" VerticalAlignment="Center" Grid.Row="11" Margin="3" IsChecked="{Binding IsContract, Mode=TwoWay, NotifyOnValidationError=true, 
+                ValidatesOnExceptions=true}" HorizontalAlignment="Left" Grid.Column="1" Content=""/>
+
+
+
+
+
+
+        </Grid>
+
+        <DataGrid x:Name="dataGrid" ItemsSource= "{Binding}"  IsReadOnly="True" HorizontalAlignment="Left" Height="85" Margin="341,59,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="DataGrid_SelectionChanged" AutoGenerateColumns="False" IsTextSearchEnabled="True" IsTextSearchCaseSensitive="False" Style="{StaticResource DataGridStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Contract number" Width="60" Binding="{Binding Path = ContractNumber}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Start Employment" Width="70" Binding="{Binding Path= endEmployment ,StringFormat=d}"></DataGridTextColumn>
+                <DataGridTextColumn Header="End Employment" Width="100*" Binding="{Binding Path=stertEmployment ,StringFormat=d}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="SaveButton" Content="Save" Style="{StaticResource MyButton}"  HorizontalAlignment="Left" Margin="95,403,0,0" VerticalAlignment="Top" Width="154" Height="36" Visibility="{Binding ElementName=AddContract, Path=IsChecked, Converter={StaticResource notBooleanToVisibilityConverter}}" Click="SaveButton_Click" />
+        <Button x:Name="UpdateButton" Content="Update" Style="{StaticResource MyButton}" HorizontalAlignment="Left" Margin="95,403,0,0" VerticalAlignment="Top" Width="154" Height="36"  Visibility="{Binding ElementName=UpdateContract, Path=IsChecked, Converter={StaticResource notBooleanToVisibilityConverter}}" Click="UpdateButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Delete" Style="{StaticResource MyButton}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Height="36" Margin="95,403,0,0"  Visibility="{Binding ElementName=DeleteContract, Path=IsChecked, Converter={StaticResource notBooleanToVisibilityConverter}}" Click="DeleteButton_Click"/>
+        <RadioButton x:Name="AddContract" Content="Add Contract" HorizontalAlignment="Left" Margin="426,159,0,0" VerticalAlignment="Top" IsChecked="True" Height="15" Width="108" />
+        <RadioButton x:Name="UpdateContract" Content="Update Contract" HorizontalAlignment="Left" Margin="426,187,0,0" VerticalAlignment="Top" Height="15" Width="115" />
+        <RadioButton x:Name="DeleteContract" Content="Delete Contract" HorizontalAlignment="Left" Margin="426,218,0,0" VerticalAlignment="Top" Height="15" Width="115"/>
+
+        <Border BorderBrush="Black"  Visibility="Collapsed" BorderThickness="1" Margin="142,33,262.2,283.2">
+            <ScrollViewer BorderBrush="Black" Background="White" VerticalScrollBarVisibility="Auto"  RenderTransformOrigin="0.5,0.5" Margin="-2.8,0.2,3.4,0.2">
+                <StackPanel Name="resultStack" Width="auto" Height="auto"></StackPanel>
+            </ScrollViewer>
+        </Border>
+        <Border BorderBrush="Black"  Visibility="Collapsed" BorderThickness="1" Margin="142,70,262.2,215.2">
+            <ScrollViewer BorderBrush="Black" Background="White" VerticalScrollBarVisibility="Auto" RenderTransformOrigin="0.5,0.5" Margin="-1.8,0.2,2.4,-0.2">
+                <StackPanel Name="resultStackNanny" Width="auto" Height="auto"></StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <Border BorderBrush="Black"  Visibility="Collapsed" BorderThickness="1" Margin="139,100,219.2,196.2">
+            <ScrollViewer BorderBrush="Black" Background="White" VerticalScrollBarVisibility="Auto" RenderTransformOrigin="0.5,0.5"  >
+                <StackPanel Name="resultStackMother" Width="auto" Height="auto"></StackPanel>
+            </ScrollViewer>
+        </Border>
+
+    </Grid>
+</Page>
